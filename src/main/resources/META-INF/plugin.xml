@@ -1,7 +1,7 @@
 <idea-plugin>
-    <id>org.example.PluginAndroidStudio</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <id>br.com.andersonmatte.PluginAndroidStudio</id>
+    <name>Android Plugin Demo</name>
+    <vendor email="andersonmatte_18@hotmail.com" url="https://andersonmatte.github.io/">Anderson Matte</vendor>
 
     <description><![CDATA[
     Enter short description for your plugin here.<br>
@@ -17,6 +17,9 @@
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
+        <group id="PluginAndroidStudio.HelloAction" text="PluginAndroidStudio" description="abaout my idea">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action class="br.com.andersonmatte.HelloAction" id="PluginAndroidStudio.Actions.HelloAction" text="Say Hello"/>
+        </group>
     </actions>
 </idea-plugin>
